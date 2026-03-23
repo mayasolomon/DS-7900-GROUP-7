@@ -48,7 +48,7 @@ model1_results <- fg |>
 
 print(model1_results)
 
-# Plot (still shows distance effect clearly)
+# Plot 
 ggplot(fg, aes(x = kick_distance, y = made_kick)) +
   geom_jitter(height = 0.05, alpha = 0.3) +
   stat_smooth(method = "glm", method.args = list(family = "binomial")) +
